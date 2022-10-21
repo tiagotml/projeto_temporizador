@@ -18,14 +18,13 @@ export function Controls({
     function reset() {
         buttonPlay.classList.remove('hide');
         buttonPause.classList.add('hide');
-        buttonStop.classList.add('hide');
         buttonSet.classList.remove('hide');
+        buttonStop.classList.add('hide');
 
     }
     function getMinutes() {
         let newMinutes = prompt('Quantos minutos?')
         if (!newMinutes) {
-            
             return false
         }
 
@@ -36,7 +35,7 @@ export function Controls({
         reset,
         play,
         pause,
-        getMinutes,
+        getMinutes
     }
 }
 
