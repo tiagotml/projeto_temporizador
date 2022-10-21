@@ -1,4 +1,3 @@
-
 import Controls from "./controls.js"
 import Timer from "./timer.js"
 import Sounds from "./sounds.js"
@@ -53,11 +52,13 @@ buttonStop.addEventListener('click', function () {
 buttonSoundOff.addEventListener('click', function () {
   buttonSoundOn.classList.remove('hide')
   buttonSoundOff.classList.add('hide')
+  sound.bgAudio.pause()
 })
 
 buttonSoundOn.addEventListener('click', function () {
   buttonSoundOn.classList.add('hide')
   buttonSoundOff.classList.remove('hide')
+  sound.bgAudio.play()
 })
 
 buttonSet.addEventListener('click', function () {

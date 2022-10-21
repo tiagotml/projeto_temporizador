@@ -31,9 +31,9 @@ export default function Timer({
       updateDisplay(minutes, 0)
 
       if (isFinished) {
+        sound.timeEnd()
         resetControls()
         updateDisplay()
-        sound.timeEnd()
         return
       }
 
